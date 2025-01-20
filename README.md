@@ -31,23 +31,13 @@ docker compose up -d
 ### 4. Acessar o Container PHP
 Entre no container PHP em execução:
 ```bash
-docker exec -it php-laravel bash
-```
-
-### 5. Instalar Dependências
-Dentro do container, instale as dependências do Laravel:
-```bash
-composer install
+docker exec -it laravel-app bash
 ```
 
 ### 6. Executar as Migrações do Banco de Dados
 Execute as migrações para configurar o esquema do banco de dados:
 ```bash
 php artisan migrate
-```
-(Opcional) Popule o banco de dados com dados de exemplo:
-```bash
-php artisan db:seed
 ```
 
 ### 7. Acessar a Aplicação
